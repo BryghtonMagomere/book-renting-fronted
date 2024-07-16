@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Haven - Book Rental Catalog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url("https://th.bing.com/th/id/OIP.hH0RkPCZcB1SR4MvuOhB3QHaE8?w=1254&h=837&rs=1&pid=ImgDetMain");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 0;
+      margin: 0;
+    }
+    .header {
+      background-color: #e1d6d6;
+      padding: 20px;
+      text-align: center;
+    }
+    .nav-bar {
+      overflow: hidden;
+      padding-top: 0;
+    }
+    .nav-bar a {
+      float: right;
+      display: block;
+      font-weight: bold;
+      color: #f9f7f7;
+      text-align: center;
+      padding: 20px 70px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-bar a:hover {
+      color: #e8491d;
+    }
+    .container {
+      width: 300px; /* Adjust width as needed */
+    height: 350px; /* Adjusted height for spacing */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    margin-left: 60px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 90%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    .login-form input[type="text"]:focus,
+    .login-form input[type="password"]:focus {
+      background-color: #cec2c2;
+      outline: none;
+    }
+    .login-form button {
+      background-color: #4CAF50;
+    color: rgb(8, 8, 8);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+    position: relative;
+    left: 30%;
+    }
+    .login-form button:hover {
+      opacity: 1;
+    }
+    .login-form .signup {
+      background-color: #4CAF50;
+      width: 40%;
+      position: relative;
+      left: 30%;
+    }
+    .footer {
+      background-color: #333;
+      color: #f9f7f7;
+      text-align: center;
+      padding: 10px;
+      height:100px;
+    }
+    .footer a {
+      color: #f9f7f7;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Our Online Book Rental</h1>
+    <p>Find your favorite books and rent them with ease!</p>
+  </div>
+  <div class="nav-bar">
+    <a href="#">Account</a>
+    <a href="#">Your Rental</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="homepage.html">Home</a>
+  </div>
+  <div class="container">
+    <form class="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button><br>
+      <button type="button" class="signup" onclick="location.href='signup.html'">Sign Up</button>
+      <p><a href="#">Forgot password?</a></p>
+    </form>
+  </div><br><br><br>
+  <div class="footer">
+    <p>Connect with us on social media!</p>
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f">online book rental</i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter">online book rental</i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram">online book rental</i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in">online book rental</i></a>
+    <p>&copy; 2024 Online Book Rental. All rights reserved.</p>
+  </div>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+  

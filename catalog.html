@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Rental - Book Rental Catalog</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-image: url('OIP (2).jpeg'); /* Replace with your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.5); /* Add a semi-transparent white background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    header {
+      background: #50b3a2;
+      color: white;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e8491d 3px solid;
+    }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 20px;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #e8491d;
+    }
+    header ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    header li {
+      display: inline;
+    }
+    header #branding {
+      float: left;
+    }
+    header #branding h1 {
+      margin: 0;
+    }
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+    /* Rest of the styles remain unchanged */
+     /* Catalog styles */
+     .catalog {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+      grid-gap: 20px;
+      margin-top: 20px;
+    }
+    .book {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
+    .book img {
+      width: 100px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book h3 {
+      color: #e8491d;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .book p {
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+    .book button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #50b3a2;
+      color: white;
+      border: 0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .book button:hover {
+      background: #e8491d;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Book</span> Online Book Rental </h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+   <br>
+   <br>
+  <div class="container">
+    <section class="catalog">
+      <!-- Book Item 1 -->
+      <div class="book">
+        <img src="book1-cover.jpg" alt="Book 1 Cover">
+        <h3>The Great Gatsby</h3>
+        <p>by F. Scott Fitzgerald</p>
+        <button>Rent Now</button>
+      </div>
+      <!-- Book Item 2 -->
+      <div class="book">
+        <img src="book2-cover.jpg" alt="Book 2 Cover">
+        <h3>1984</h3>
+        <p>by George Orwell</p>
+        <button>Rent Now</button>
+      </div>
+      <!-- Book Item 3 -->
+      <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>To Kill a Mockingbird</h3>
+        <p>by Harper Lee</p>
+        <button>Rent Now</button>
+      </div>
+       <!-- Book Item 4 -->
+       <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>kidagaa kimemuozea</h3>
+        <p>ken walibora</p>
+        <button>Rent Now</button>
+      </div>
+      <div class="book">
+        <img src="book4-cover.jpg" alt="Book 4 Cover">
+        <h3>Pride and Prejudice</h3>
+        <p>by Jane Austen</p>
+        <button>Rent Now</button>
+      </div>
+      <div class="book">
+        <img src="book1-cover.jpg" alt="Book 1 Cover">
+        <h3>The Great Gatsby</h3>
+        <p>by F. Scott Fitzgerald</p>
+        <button>Rent Now</button>
+      </div>
+      <!-- Book Item 2 -->
+      <div class="book">
+        <img src="book2-cover.jpg" alt="Book 2 Cover">
+        <h3>1984</h3>
+        <p>by George Orwell</p>
+        <button>Rent Now</button>
+      </div>
+      <!-- Book Item 3 -->
+      <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>To Kill a Mockingbird</h3>
+        <p>by Harper Lee</p>
+        <button>Rent Now</button>
+      </div>
+       <!-- Book Item 4 -->
+       <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>kidagaa kimemuozea</h3>
+        <p>ken walibora</p>
+        <button>Rent Now</button>
+      </div>
+      <div class="book">
+        <img src="book4-cover.jpg" alt="Book 4 Cover">
+        <h3>Pride and Prejudice</h3>
+        <p>by Jane Austen</p>
+        <button>Rent Now</button>
+      </div>
+      <!-- Book Item 3 -->
+      <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>To Kill a Mockingbird</h3>
+        <p>by Harper Lee</p>
+        <button>Rent Now</button>
+      </div>
+       <!-- Book Item 4 -->
+       <div class="book">
+        <img src="book3-cover.jpg" alt="Book 3 Cover">
+        <h3>kidagaa kimemuozea</h3>
+        <p>ken walibora</p>
+        <button>Rent Now</button>
+      </div>
+      
+      <!-- Additional book items should be added here -->
+    </section>
+  </div>
+  <script>
+    // Corrected JavaScript to add event listeners to all buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      var rentButtons = document.querySelectorAll('.book button');
+      rentButtons.forEach(function(button) {
+        button.addEventListener('click', rentNowClicked);
+      });
+    });
+  
+    // Function to prompt a message and redirect to the home page
+    function rentNowClicked() {
+      alert('Please login or sign up at the home page.');
+      window.location.href = 'homepage.html';
+    }
+  </script>
+  
+  <br><br><br>
+  <footer>
+    <p>Online Book Rental © 2024</p>
+  </footer>
+</body>
+</html>

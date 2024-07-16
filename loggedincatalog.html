@@ -1,0 +1,62 @@
+<?php
+// Database configuration
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "book_rental";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Fetch all rented books
+$sql = "SELECT book_title, full_name, rental_duration, created_at
+        FROM bookings";
+
+$result = $conn->query($sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Rentals </title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <div class="container">
+        <h1>Your Rental History</h1>
+        <?php
+        if ($result->num_rows > 0) {
+            echo "<table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Full Name</th>
+                        <th>Rental Duration</th>
+                        <th>Created At</th>
+                    </tr>";
+            while($row = $result->fetch_assoc()) {
+                echo "<tr>
+                        <td>" . htmlspecialchars($row["book_title"]) . "</td>
+                        <td>" . htmlspecialchars($row["full_name"]) . "</td>
+                        <td>" . htmlspecialchars($row["rental_duration"]) . "</td>
+                        <td>" . htmlspecialchars($row["created_at"]) . "</td>
+                      </tr>";
+            }
+            echo "</table>";
+        } else {
+            echo "<p>No rental history found.</p>";
+        }
+        $conn->close();
+        ?>
+    </div>
+</body>
+</html>
